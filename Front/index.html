@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Bank-Marketing</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white">
+
+    <nav class=" text-center">
+        <h1 class="text-center">Predict Bank-Marketing</h1>
+    </nav>
+
+    <form  class="text-center" method="post" action="http://127.0.0.1:8000/upload2" enctype="multipart/form-data">
+        Selecciona un archivo CSV o XLSX para enviar:
+        <input type="file" accept=".csv,.xlsx" required name="file">
+        <input type="submit" value="Enviar archivo">
+    </form>
+
+
+
+</body>
+
+</html>
