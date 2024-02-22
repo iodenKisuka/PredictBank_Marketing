@@ -13,3 +13,13 @@ class AlgoritmPredict:
         
         # Retorna el DataFrame o realiza cualquier acción adicional
         return df.to_dict()
+
+
+    def Predictor():
+        print("predictor ")
+        tableAll = pd.read_csv("https://docs.google.com/spreadsheets/d/1rcPNLga760uabPzX-5YB739ipkpwDn2XIkIF4T8u3kE/export?format=csv")
+        print("\nConjunto de datos:")
+        print(tableAll.head())
+
+        X = tableAll.drop(['y'], axis=1)
+        Y = tableAll['y']
